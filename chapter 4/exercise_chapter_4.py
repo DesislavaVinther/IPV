@@ -119,3 +119,5 @@ turtle.speed(10)
 flower(num_petals=20, radius=50, angle=120)     # draw the flower
 turtle.hideturtle()                             # hide the turtle
 turtle.done()
+
+"hej"
