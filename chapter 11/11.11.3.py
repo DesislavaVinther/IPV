@@ -9,7 +9,8 @@ letter_map = dict(zip(letters, numbers))
 #       returns: string (encoded word)
 
 def shift_word(word, shift):
-    shifted_letters = []
+    #shifted_letters = []                 # Probably an overkill with a list
+    output = ''
 
     for letter in word:
         index = letter_map[letter]                  # Find the index of the current letter i alfabetet
@@ -18,8 +19,8 @@ def shift_word(word, shift):
 
         new_letter = letters[new_index]             # Get the new letter at the shifted position
 
-        shifted_letters.append(new_letter)          # Add to our result list
+        output = output+new_letter                   # Add to our result list
 
-    return ''.join(shifted_letters)                 # Join all letters into a string
+    return output                                      # Join all letters into a string
 
-print(shift_word('cheer',7))
+print(shift_word('cubed',10))
