@@ -19,8 +19,8 @@ def shift_word(word, shift):
 
         new_letter = letters[new_index]             # Get the new letter at the shifted position
 
-        output = output+new_letter                   # Add to our result list
+        output = output+new_letter                  # Make a string ( Not adding to a result list)
 
-    return output                                      # Join all letters into a string
+    return output                                   # return output (Not Join all letters into a string)
 
-print(shift_word('cubed',10))
+print(shift_word('wewillattackarmoricatnineinthemorning',7))
